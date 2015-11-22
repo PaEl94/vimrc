@@ -42,6 +42,8 @@ set t_Co=256
 syntax on
 colorscheme jellybeans
 set cursorline
+set laststatus=2
+set noshowmode "Use Lightline instead
 
 """ Editor behaviour
 set ts=4
