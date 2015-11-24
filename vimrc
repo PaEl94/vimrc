@@ -46,7 +46,9 @@ set laststatus=2
 set noshowmode "Use Lightline instead
 
 """ Editor behaviour
-set ts=4
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set scrolloff=10
 set wildignore=.bak,.pyc,.o,.ojb,.a,.pdf,.jpg,.gif,.png,.avi,.mkv,.so
 set hidden
@@ -60,7 +62,8 @@ set guioptions=-r "Remove scroll bar
 
 """ filetype specific settings
 filetype plugin indent on
-autocmd Filetype java setlocal makeprg=javac\ % "Further options on same line
+autocmd Filetype java setlocal makeprg=javac\ % 
+autocmd filetype java map <F10> :!java %:r<CR>
 autocmd Filetype c setlocal makeprg=gcc\ %\ -o\ %:r
 autocmd Filetype hs set makeprg=ghc\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
