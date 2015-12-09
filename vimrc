@@ -53,12 +53,14 @@ set scrolloff=10
 set wildignore=.bak,.pyc,.o,.ojb,.a,.pdf,.jpg,.gif,.png,.avi,.mkv,.so
 set hidden
 set history=1000
+set wildmode=longest,list
 
 
 """ Gvim
 set guioptions=-m "Remove menu bar
 set guioptions=-T "Remove tool bar
 set guioptions=-r "Remove scroll bar
+set mouse=
 
 """ filetype specific settings
 filetype plugin indent on
