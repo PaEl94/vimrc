@@ -67,7 +67,10 @@ filetype plugin indent on
 autocmd Filetype java setlocal makeprg=javac\ % 
 autocmd filetype java map <F10> :!java %:r<CR>
 autocmd Filetype c setlocal makeprg=gcc\ %\ -o\ %:r
-autocmd Filetype hs set makeprg=ghc\ %
+autocmd Filetype hs setlocal makeprg=ghc\ %
+autocmd Filetype tex setlocal makeprg=pdflatex\ %
+autocmd Filetype tex map <F10> :!evince %:r.pdf<CR> 
+
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 
 
