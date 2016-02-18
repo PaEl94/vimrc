@@ -26,6 +26,9 @@ endif
 Plugin 'chrisbra/SudoEdit.vim'
 Plugin 'ervandew/supertab'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'sjl/gundo.vim'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
@@ -41,9 +44,11 @@ set number
 set t_Co=256
 syntax on
 colorscheme jellybeans
+let g:lightline = { 'colorscheme': 'jellybeans',}
 set cursorline
+set noshowmode 
+" Always show statusline
 set laststatus=2
-set noshowmode "Use Lightline instead
 
 """ Editor behaviour
 set tabstop=4
@@ -54,7 +59,9 @@ set wildignore=.bak,.pyc,.o,.ojb,.a,.pdf,.jpg,.gif,.png,.avi,.mkv,.so
 set hidden
 set history=1000
 set wildmode=longest,list
-
+set incsearch
+set ignorecase
+set smartcase
 
 """ Gvim
 set guioptions=-m "Remove menu bar
@@ -73,6 +80,13 @@ autocmd Filetype tex map <F10> :!evince %:r.pdf<CR>
 
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 
-
 """ Key maps
 map <F9> :make<Return>:copen<Return>
+"Don't skip wrapped lines
+nmap j gj 
+nmap k gk
+:cnoremap <C-a>  <Home>
+:cnoremap <C-d>  <Delete>
+:nmap <C-n> :bnext<CR>
+:nmap <C-p> :bprev<CR>
+nnoremap <F5> :GundoToggle<CR>
