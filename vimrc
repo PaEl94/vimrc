@@ -82,9 +82,9 @@ set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 
 """ Key maps
 map <F9> :make<Return>:copen<Return>
-"Don't skip wrapped lines
-nmap j gj 
-nmap k gk
+"Move by column instead of line
+nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
+nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
 :cnoremap <C-a>  <Home>
 :cnoremap <C-d>  <Delete>
 :nmap <C-n> :bnext<CR>
