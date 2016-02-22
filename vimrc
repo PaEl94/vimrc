@@ -29,6 +29,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 
@@ -77,9 +78,10 @@ autocmd Filetype c setlocal makeprg=gcc\ %\ -o\ %:r
 autocmd Filetype hs setlocal makeprg=ghc\ %
 autocmd Filetype tex setlocal makeprg=pdflatex\ %
 autocmd Filetype tex map <F10> :!evince %:r.pdf<CR> 
+autocmd Filetype tex let @1='i\(\)hi'
+autocmd Filetype tex let @2='i\[\]hi'
 
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-
 """ Key maps
 map <F9> :make<Return>:copen<Return>
 "Move by column instead of line
