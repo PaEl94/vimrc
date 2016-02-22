@@ -63,6 +63,11 @@ set wildmode=longest,list
 set incsearch
 set ignorecase
 set smartcase
+" remember last position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 
 """ Gvim
 set guioptions=-m "Remove menu bar
