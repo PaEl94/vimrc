@@ -97,3 +97,4 @@ nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
 :nmap <C-n> :bnext<CR>
 :nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <Leader>t :ProjectTreeToggle <CR>
