@@ -71,9 +71,9 @@ endif
 
 
 """ Gvim
-set guioptions=-m "Remove menu bar
-set guioptions=-T "Remove tool bar
-set guioptions=-r "Remove scroll bar
+set guioptions-=m "Remove menu bar
+set guioptions-=T "Remove tool bar
+set guioptions-=r "Remove scroll bar
 set mouse=
 
 """ filetype specific settings
