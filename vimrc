@@ -80,6 +80,7 @@ set mouse=
 filetype plugin indent on
 autocmd Filetype java setlocal makeprg=javac\ % 
 autocmd filetype java map <F10> :!java %:r<CR>
+autocmd filetype java map <Leader>t :ProjectTreeToggle <CR>
 autocmd Filetype c setlocal makeprg=gcc\ %\ -ansi\ -pedantic\ -Wall\ -o\ %:r
 autocmd filetype c map <F10> :!./%:r<CR>
 autocmd Filetype hs setlocal makeprg=ghc\ %
@@ -97,4 +98,3 @@ nnoremap <C-a> ^
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
-nnoremap <Leader>t :ProjectTreeToggle <CR>
