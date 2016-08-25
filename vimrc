@@ -92,9 +92,10 @@ autocmd Filetype tex let @2='i\[\]hi'
 """ Key maps
 map <F9> :make<Return>:copen<Return>
 "Move by column instead of line
-nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
-nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
-nnoremap <C-a> ^
+map <expr> k (v:count == 0 ? 'gk' : 'k')
+map <expr> j (v:count == 0 ? 'gj' : 'j')
+map <C-a> ^
+map <C-a> ^
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
