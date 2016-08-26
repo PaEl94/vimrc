@@ -95,7 +95,7 @@ map <F9> :make<Return>:copen<Return>
 map <expr> k (v:count == 0 ? 'gk' : 'k')
 map <expr> j (v:count == 0 ? 'gj' : 'j')
 map <C-a> ^
-map <C-a> ^
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <Leader>w :w<CR>
