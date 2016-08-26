@@ -1,8 +1,8 @@
 """ Vundle
 call system("mkdir -p $HOME/.vim/{plugin,undo}")
-if !filereadable($HOME . "/.vimrc.plugins") | call system("touch $HOME/.vimrc.plugins") | endif
-if !filereadable($HOME . "/.vimrc.first") | call system("touch $HOME/.vimrc.first") | endif
-if !filereadable($HOME . "/.vimrc.last") | call system("touch $HOME/.vimrc.last") | endif
+"if !filereadable($HOME . "/.vimrc.plugins") | call system("touch $HOME/.vimrc.plugins") | endif
+"if !filereadable($HOME . "/.vimrc.first") | call system("touch $HOME/.vimrc.first") | endif
+"if !filereadable($HOME . "/.vimrc.last") | call system("touch $HOME/.vimrc.last") | endif
 
 let has_vundle=1
 if !filereadable($HOME."/.vim/bundle/Vundle.vim/README.md")
