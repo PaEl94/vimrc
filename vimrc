@@ -70,7 +70,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-
 """ Gvim
 set guioptions-=m "Remove menu bar
 set guioptions-=T "Remove tool bar
@@ -103,3 +102,4 @@ nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>W :SudoWrite<CR>
