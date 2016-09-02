@@ -30,6 +30,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tmhedberg/matchit'
 
 call vundle#end()
 
@@ -75,6 +76,9 @@ set guioptions-=m "Remove menu bar
 set guioptions-=T "Remove tool bar
 set guioptions-=r "Remove scroll bar
 set mouse=
+
+""" files
+set noswapfile
 
 """ filetype specific settings
 filetype plugin indent on
