@@ -39,3 +39,7 @@ noremap k 3k
 
 " https://github.com/vimpr/vimperator-colors
 colorscheme indigo
+
+" Websites that need keybindings
+:ignorekeys add -except=:,/,f,j,k,t,o pr0gramm.com
+:ignorekeys add -except=:,/,f,j,k,t,o feedly.com
