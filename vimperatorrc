@@ -43,4 +43,4 @@ colorscheme indigo
 
 " Websites that need keybindings
 :ignorekeys add -except=:,/,f,j,k,t,o pr0gramm.com
-:ignorekeys add -except=:,;,/,f,g natrium.no-ip.org/selfoss/
+:ignorekeys add -except=:,;,/,f,g,d,,q,@,n touchfluffy.ch/selfoss/
