@@ -41,4 +41,4 @@ map! <F1> <nop>
 " https://github.com/vimpr/vimperator-colors
 colorscheme indigo
 
-so git-checkout/dotfiles/vimperatorrc-private
+so ~/git-checkout/dotfiles/vimperatorrc-private
