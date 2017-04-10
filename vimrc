@@ -93,6 +93,7 @@ autocmd Filetype tex setlocal makeprg=pdflatex\ %
 autocmd Filetype tex map <F10> :!evince %:r.pdf<CR> 
 autocmd Filetype tex let @1='i\(\)hi'
 autocmd Filetype tex let @2='i\[\]hi'
+au BufNewFile,BufRead *.psql setf psql
 
 """ Key maps
 map <F9> :make<Return>:copen<Return>
