@@ -93,7 +93,6 @@ autocmd Filetype tex setlocal makeprg=pdflatex\ %
 autocmd Filetype tex map <F10> :!evince %:r.pdf<CR> 
 autocmd Filetype tex let @1='i\(\)hi'
 autocmd Filetype tex let @2='i\[\]hi'
-autocmd Filetype tex nnoremap <Leader>' :%s/"u/ü/g<CR> :%s/"o/ö/g<CR> :%s/"a/ä/g<CR>
 au BufNewFile,BufRead *.psql setf psql
 
 """ Key maps
@@ -107,3 +106,4 @@ nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :SudoWrite<CR>
+nnoremap <Leader>' :%s/"u/ü/g<CR> :%s/"o/ö/g<CR> :%s/"a/ä/g<CR>
