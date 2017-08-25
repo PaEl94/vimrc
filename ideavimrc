@@ -1,0 +1,16 @@
+let mapleader = "\"
+map <leader>p :action ParameterInfo<CR>
+map <leader>f :action Find<CR>
+map <leader>b :action EditSource<CR>
+map <leader>u :action GotoSuperMethod<CR>
+
+noremap H :action Back<CR>
+noremap L :action Forward<CR>
+
+noremap <C-a> ^
+
+set incsearch
+set ignorecase
+set smartcase
+
+set scrolloff=10
