@@ -31,6 +31,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tmhedberg/matchit'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 
