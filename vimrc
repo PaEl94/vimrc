@@ -90,7 +90,7 @@ autocmd filetype java map <F10> :!java %:r<CR>
 autocmd filetype java map <Leader>t :ProjectTreeToggle <CR>
 autocmd Filetype c setlocal makeprg=gcc\ %\ -ansi\ -pedantic\ -Wall\ -o\ %:r
 autocmd filetype c map <F10> :!./%:r<CR>
-autocmd Filetype cpp setlocal makeprg=g++\ -g\ -std=c++11\ %\ -o\ %:r
+autocmd Filetype cpp setlocal makeprg=g++\ -g\ -Wall\ -std=c++17\ %\ -o\ %:r
 autocmd filetype cpp map <F10> :!./%:r<CR>
 autocmd Filetype hs setlocal makeprg=ghc\ %
 autocmd Filetype tex setlocal makeprg=pdflatex\ %
