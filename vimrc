@@ -110,4 +110,4 @@ nmap <C-p> :bprev<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :SudoWrite<CR>
-nnoremap <Leader>' :%s/"u/ü/ge \| %s/"o/ö/ge \| %s/"a/ä/ge <CR>
+nnoremap <Leader>' :%s/"u/ü/gIe \| %s/"o/ö/gIe \| %s/"a/ä/gIe \| %s/"U/Ü/gIe \| %s/"O/Ö/gIe \| %s/"A/Ä/gIe <CR>
