@@ -35,6 +35,8 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'chazy/cscope_maps'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
+Plugin 'Rip-Rip/clang_complete'
+
 
 call vundle#end()
 
@@ -90,7 +92,7 @@ autocmd filetype java map <F10> :!java %:r<CR>
 autocmd filetype java map <Leader>t :ProjectTreeToggle <CR>
 autocmd Filetype c setlocal makeprg=gcc\ %\ -ansi\ -pedantic\ -Wall\ -o\ %:r
 autocmd filetype c map <F10> :!./%:r<CR>
-autocmd Filetype cpp setlocal makeprg=g++\ -g\ -Wall\ -std=c++17\ %\ -o\ %:r
+autocmd Filetype cpp setlocal makeprg=clang++\ -g\ -Wall\ -std=c++17\ %\ -o\ %:r
 autocmd filetype cpp map <F10> :!./%:r<CR>
 autocmd Filetype hs setlocal makeprg=ghc\ %
 autocmd Filetype tex setlocal makeprg=pdflatex\ %
