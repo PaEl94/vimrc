@@ -27,7 +27,6 @@ Plugin 'chrisbra/SudoEdit.vim'
 Plugin 'ervandew/supertab'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'sjl/gundo.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tmhedberg/matchit'
@@ -75,6 +74,11 @@ set smartcase
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+set undofile
+set undodir=~/.vim/undodir
+let s:undos = split(globpath(&undodir, '*'), "\n")
+call filter(s:undos, 'getftime(v:val) < localtime() - (60 * 60 * 24 * 90)')
+call map(s:undos, 'delete(v:val)')
 
 """ Gvim
 set guioptions-=m "Remove menu bar
@@ -109,7 +113,6 @@ map <expr> j (v:count == 0 ? 'gj' : 'j')
 map <C-a> ^
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
-nnoremap <F5> :GundoToggle<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>W :SudoWrite<CR>
 nnoremap <Leader>' :%s/"u/ü/gIe \| %s/"o/ö/gIe \| %s/"a/ä/gIe \| %s/"U/Ü/gIe \| %s/"O/Ö/gIe \| %s/"A/Ä/gIe <CR>
